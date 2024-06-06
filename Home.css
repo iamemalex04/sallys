@@ -1,0 +1,564 @@
+ *{
+    margin: 0%;
+    padding: 0%;
+}
+
+.gradient{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgb(0, 0, 0));
+}
+
+.Home h2{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.Home p{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.Home .btn{
+    margin-top: 30px;
+}
+.Home a{
+    margin-left: 25px;
+    text-decoration: none;
+}
+.btn .blue{
+    background-color: rgb(27, 27, 229);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s ease;
+}
+.btn .yellow{
+    background-color: rgb(84, 40, 241);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.btn a:hover{
+    color: blue;
+    background-color: white;
+}
+
+/* Features */
+
+.features{
+    padding: 5vw 8vw 8vw 8vw;
+    text-align: center;
+}
+.features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+.features .fea-box{
+    background-color: #F9F9FF;
+    text-align: start;
+}
+.features .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46, 46, 59);
+    padding: 13px 0 7px 0;
+}
+.features .fea-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70, 70, 87);
+}
+.fea-box i{
+    color: darkblue;
+    text-align: center;
+}
+
+
+
+
+/* courses */
+.Course{
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+}
+
+.courses-1{
+    text-align: start;
+    background: #F9F9FF;
+    position: relative;
+    height: 100%;
+}
+ .Course .course-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+ .Course .courses-1 img{
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.Course .courses-1 .details{
+    padding: 15px 15px 0 15px;
+}
+
+.Course .courses-1 i{
+    color: #FDC93B;
+    font-size: 0.9rem;
+
+}
+ .cost{
+    background-color: rgb(74, 74, 136);
+    color: #FFF;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 200px;
+
+}
+.star{
+    color: #FDC93B;
+}
+ span{
+    color: gray;
+}
+
+/* registration */
+
+.registration{
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)),url(img/web.webp);
+    backdrop-filter: blur(14px);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.registration .reminder{
+    color: white;
+
+}
+
+.registration .reminder .time{
+    display: flex;
+    margin-top: 40px;
+}
+
+.registration .reminder .time .date{
+    text-align: center;
+    padding: 20px 20px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 5px;
+    margin: 0 5px 10px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.registration .form{
+    background: #FFF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+}
+
+.rollup{
+    width: 250px;
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    animation: rollup 4s linear infinite;
+}
+@keyframes rollup{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+
+.registration .form input{
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px soloid rgb(84, 40, 241);
+    outline: none;
+}
+
+.yellow-btn{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(84, 40, 241);
+    color: #FFF;
+    border-radius: 5px;
+    border: none;
+    margin-left: 35%;
+}
+.form .btn a{
+    text-decoration: none;
+}
+.form .btn{
+    margin-top: 20px;
+
+}
+.registration .form input::placeholder{
+    color: #413c3c;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Experts */
+
+.Experts{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+
+.Experts .expert-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+.Experts .expert-box .profile{
+    background: #fafaf1;
+    padding: 30px 10px;
+}
+
+.icon{
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+.pro-links{
+    margin-top: 10px;
+}
+
+.pro-links i{
+    padding: 10px 13px;
+    border: 1px solid rgb(21, 21, 100);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.pro-links i:hover{
+    background:  rgb(21, 21, 100);
+   color: white;
+}
+
+.border img{
+    border-radius: 50px;
+}
+
+/* footer */
+
+footer{
+    margin-top: 40px;
+    padding: 8vw;
+    background-color: #101c32;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .footer-col{
+    padding-bottom: 40px;
+}
+footer .footer-col h3{
+   color: rgb(241, 240, 245); 
+   font-weight: 600;
+   padding-bottom: 20px;
+}
+
+footer li{
+    list-style: none;
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+footer li:hover{
+    color: rgb(241, 240, 245);
+}
+footer p{
+    color: #7b838a;
+}
+footer .subscribe{
+    margin-top: 20px;
+}
+footer input{
+    width: 220px;
+    padding: 12px 15px;
+    background: #334f6c;
+    border: none;
+    outline: none;
+    color: white;
+}
+footer .subscribe a{
+text-decoration: none;
+font-size: 0.9rem;
+padding: 12px 15px;
+background-color: white;
+font-weight: 600;
+}
+footer .subscribe .yellow{
+    background-color:  #FDC93B;
+    color: white;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+footer .subscribe a .yellow:hover{
+    color: rgb(21, 21, 100);
+    background: white;
+}
+footer .copyright{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+footer .copyright .pro-links{
+    margin-top: 10px;
+}
+footer .copyright .pro-links i{
+    background-color: #5f7185;
+    color: #FFF;
+}
+footer .copyright .pro-links i:hover{
+    background-color: #FDC93B;
+    color: #2c2c2c;
+    cursor: pointer;
+}
+footer .copyright p{
+    color: #FFF;
+}
+
+
+
+
+/* 
+
+contact */
+
+.details .yellow{
+    /* background-color:  #FDC93B; */
+    color: rgb(84, 40, 241);
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s ease;
+    
+
+}
+
+ a {
+    text-decoration: none;
+}
+.Form{
+    margin-top: 70px;
+}
+
+
+.green{
+    background-color:  rgb(27, 27, 229);
+    color: #FFF;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s ease;
+    margin-left: px;
+}
+
+
+/* concact */
+
+.contact{
+  background-color: rgb(74, 74, 136);
+  color: white;
+  padding: 30px;
+}
+
+.form-2{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    
+}
+.h3{
+    text-align: center;
+    color: white;
+    text-align: start;
+    margin-top: 30px;
+    margin-bottom: 0;
+    margin-left: 100px;
+}
+
+.container{
+    background-color: blueviolet;
+
+}
+
+label{
+    font-size: 15px;
+    margin-bottom: 10px;
+    
+}
+
+.green:active{
+    transform: scale(0.95);
+
+}
+
+
+
+/* about */
+.about{
+    margin-bottom: 50px;
+}
+.weare h2, h3{
+    color: rgb(74, 74, 136);
+    text-align: center;
+    margin-top: 30px;
+}
+.about h2, h3{
+    color: rgb(74, 74, 136);
+    text-align: center;
+    margin-top: 30px;
+}
+.weare p{
+    color: grey;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+    
+}
+
+
+
+.about p{
+    color: grey;
+    font-size: 20px;
+}
+
+/* Container styles */
+.scrolling-text-container {
+    background-color: #eff5ff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Inner container styles */
+.scrolling-text-inner {
+    display: flex;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+/* Text styles */
+.scrolling-text {
+    display: flex;
+}
+
+.scrolling-text-item {
+    padding: 0 30px;
+}
+
+/* Apply the animation to the text items */
+.scrolling-text-inner>div {
+    animation: var(--direction) var(--marquee-speed) linear infinite;
+}
+
+/* Pause the animation when a user hovers over it */
+.scrolling-text-container:hover .scrolling-text-inner>div {
+    animation-play-state: paused;
+}
+
+/* Setting the Animation using Keyframes */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+.scrolling-text img{
+    width: 500px;
+
+}
+
+@media only screen and (max-width: 600px){
+    .registration{
+        padding: 4vw 4vw 4vw 4vw;
+    
+    }
+    .registration .reminder .time{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    .registration .form{
+        padding: 20px;
+    }
+
+    .contact img{
+        width: 100%;
+    }
+    .Course{
+        margin-top: 30px;
+    }
+}
